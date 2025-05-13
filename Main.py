@@ -16,7 +16,7 @@ yes_tumor_path = os.path.join(image_directory, 'yes')
 
 
 if not os.path.exists(no_tumor_path) or not os.path.exists(yes_tumor_path):
-    print("❌ ERROR: One or both image folders not found.")
+    print(" ERROR: One or both image folders not found.")
     print("Expected folders:")
     print("  -", no_tumor_path)
     print("  -", yes_tumor_path)
@@ -52,7 +52,7 @@ for image_name in yes_tumor_images:
 
 
 if len(dataset) == 0:
-    print("❌ ERROR: No images loaded. Please check your dataset paths.")
+    print(" ERROR: No images loaded. Please check your dataset paths.")
     exit()
 else:
     print(f" Loaded {len(dataset)} images successfully.")
